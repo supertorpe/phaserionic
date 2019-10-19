@@ -33,5 +33,8 @@ export class FirstGamePage {
     this.game = new Phaser.Game(this.config);
   }
 
+  ionViewDidLeave() {
+    this.game.destroy(true);
+  }
 
 }
